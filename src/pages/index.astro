@@ -7,15 +7,26 @@ import Services from "@/components/landing/Services.astro";
 import Cta from "@/components/landing/Cta.astro";
 import Form from "@/components/global/Form.astro";
 import Testimonials from "@/components/landing/Testimonials.astro";
-
 ---
 
-
 <BaseLayout pageTitle="RNZ">
-  <Hero />
-  <Work />
-  <Intro />
-  <Services />
+  <div class="snap-y snap-align h-screen w-screen mx:auto overflow-scroll">
+    <div class="snap-start">
+      <Hero />
+    </div>
+
+    <div class="snap-start">
+      <Work />
+    </div>
+
+    <div class="snap-start">
+      <Intro />
+    </div>
+
+    <div class="snap-start">
+      <Services />
+    </div>
+  </div>
   <Cta />
   <Form />
   <Testimonials />
